@@ -66,6 +66,9 @@ map k gk
 nnoremap H 0
 nnoremap L $
 
+nnoremap dH d0
+nnoremap dL d$
+
 map <S-left> b
 map <S-right> w
 
