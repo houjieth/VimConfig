@@ -69,6 +69,9 @@ nnoremap L $
 nnoremap dH d0
 nnoremap dL d$
 
+nnoremap yH y0
+nnoremap yL y$
+
 map <S-left> b
 map <S-right> w
 
