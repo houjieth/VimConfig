@@ -1,0 +1,20 @@
+*E10.8*     // 题目定义
+
+|E10.8|     // 题目引用
+
+`picture`   // 图片引用
+
+【blah】    // 强调1
+
+!!blah!!    // 强调2
+
+blah~
+// 行高亮
+
+?? WTF ??   // 疑问
+
+《blah》    // 建议
+
+ERROR
+TODO
+QUESTION
