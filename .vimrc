@@ -2,7 +2,7 @@
 
 filetype on
 
-autocmd BufRead *.txt set filetype=help
+autocmd BufRead *.txt set filetype=ipreview
 
 " Editor settings
 

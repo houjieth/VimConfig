@@ -33,7 +33,6 @@ syn match helpOption		"'t_..'"
 syn match helpHeader		"\s*\zs.\{-}\ze\s\=\~$" nextgroup=helpIgnore
 syn match helpIgnore		"." contained conceal
 syn keyword helpNote		note Note NOTE note: Note: NOTE: Notes Notes:
-syn match helpSpecial		"\<N\>"
 syn match helpSpecial		"\<N\.$"me=e-1
 syn match helpSpecial		"\<N\.\s"me=e-2
 syn match helpSpecial		"(N\>"ms=s+1
@@ -42,12 +41,7 @@ syn match helpSpecial		"\[N]"
 syn match helpSpecial		"N  N"he=s+1
 syn match helpSpecial		"Nth"me=e-2
 syn match helpSpecial		"N-1"me=e-2
-syn match helpSpecial		"{[-a-zA-Z0-9'":%#=[\]<>.,]\+}"
-syn match helpSpecial		"{[-a-zA-Z0-9'"*+/:%#=[\]<>.,]\+}"
 syn match helpSpecial		"\s\[[-a-z^A-Z0-9_]\{2,}]"ms=s+1
-syn match helpSpecial		"<[-a-zA-Z0-9_]\+>"
-syn match helpSpecial		"<[SCM]-.>"
-syn match helpNormal		"<---*>"
 syn match helpSpecial		"\[range]"
 syn match helpSpecial		"\[line]"
 syn match helpSpecial		"\[count]"
