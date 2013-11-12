@@ -212,11 +212,9 @@ else
 endif
 
 " some characters that cannot be in a java program (outside a string)
-syn match javaError "<<<\|\.\.\|=>\|<>\|||=\|&&=\|[^-]->\|\*\/"
 syn match javaOK "\.\.\."
 
 " use separate name so that it can be deleted in javacc.vim
-syn match   javaError2 "#\|=<"
 JavaHiLink javaError2 javaError
 
 " keyword definitions
