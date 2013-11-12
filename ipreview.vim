@@ -114,8 +114,14 @@ syn match helpUnderlined	"\t[* ]Underlined\t\+[a-z].*"
 syn match helpUnderlined	"FOLLOW UP"
 syn match helpUnderlined	"FOLLOWUP"
 syn match helpError		"ERROR"
-syn match helpTodo		"TODO"
-syn match helpTodo		"QUESTION"
+syn match helpError		"TODO"
+syn match helpError		"QUESTION"
+syn match helpTodo		"FEELING"
+syn match helpTodo		"IDEA"
+syn match helpTodo		"INSIGHT"
+syn match helpTodo		"METHOD"
+syn match helpTodo		"RETROSPECT"
+syn match helpTodo		"RETROSPECTIVE"
 
 syn match helpURL `\v<(((https?|ftp|gopher)://|(mailto|file|news):)[^' 	<>"]+|(www|web|w3)[a-z0-9_-]*\.[a-z0-9._-]+\.[^' 	<>"]+)[a-zA-Z0-9/]`
 
@@ -404,10 +410,6 @@ if exists("java_highlight_debug")
   syn match   javaDebugCharacter	contained "'[^\\]'"
   syn match   javaDebugSpecialCharacter contained "'\\.'"
   syn match   javaDebugSpecialCharacter contained "'\\''"
-  syn match   javaDebugNumber		contained "\<\(0[0-7]*\|0[xX]\x\+\|\d\+\)[lL]\=\>"
-  syn match   javaDebugNumber		contained "\(\<\d\+\.\d*\|\.\d\+\)\([eE][-+]\=\d\+\)\=[fFdD]\="
-  syn match   javaDebugNumber		contained "\<\d\+[eE][-+]\=\d\+[fFdD]\=\>"
-  syn match   javaDebugNumber		contained "\<\d\+\([eE][-+]\=\d\+\)\=[fFdD]\>"
   syn keyword javaDebugBoolean		contained true false
   syn keyword javaDebugType		contained null this super
   syn region javaDebugParen  start=+(+ end=+)+ contained contains=javaDebug.*,javaDebugParen
