@@ -366,10 +366,6 @@ syn region  javaString		start=+"+ end=+"+ end=+$+ contains=javaSpecialChar,javaS
 syn match   javaCharacter	 "'[^']*'" contains=javaSpecialChar,javaSpecialCharError
 syn match   javaCharacter	 "'\\''" contains=javaSpecialChar
 syn match   javaCharacter	 "'[^\\]'"
-syn match   javaNumber		 "\<\(0[0-7]*\|0[xX]\x\+\|\d\+\)[lL]\=\>"
-syn match   javaNumber		 "\(\<\d\+\.\d*\|\.\d\+\)\([eE][-+]\=\d\+\)\=[fFdD]\="
-syn match   javaNumber		 "\<\d\+[eE][-+]\=\d\+[fFdD]\=\>"
-syn match   javaNumber		 "\<\d\+\([eE][-+]\=\d\+\)\=[fFdD]\>"
 
 " unicode characters
 syn match   javaSpecial "\\u\d\{4\}"
