@@ -97,9 +97,33 @@ noremap td  :tabclose<CR>
 
 "" misc 
 noremap z <C-w>
-nnoremap ; .
+nnoremap ; :
 
 "" file operation
 nnoremap qq :q!<CR>
 nnoremap wq :wq<CR>
 nnoremap we :w<CR>
+
+"Git branch
+function! GitBranch()
+    let branch = system("git branch 2> /dev/null | sed -e '/^[^*]/d' -e 's/* //'")
+    if branch != ''
+        return '   Git Branch: ' . substitute(branch, '\n', '', 'g')
+    en
+    return ''
+endfunction
+
+function! CurDir()
+    return substitute(getcwd(), '/Users/amir/', "~/", "g")
+endfunction
+
+function! HasPaste()
+    if &paste
+        return 'PASTE MODE  '
+    en
+    return ''
+endfunction
+
+" Format the statusline
+set laststatus=2
+set statusline=\ %f\ %=%P\ %{fugitive#statusline()}
