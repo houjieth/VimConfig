@@ -82,7 +82,7 @@ syn match helpSpecial		"??.*??"
 syn match helpStatement		"【.*】"
 syn match helpStorageClass		"《.*》"
 syn match helpHyperTextJump		"`.*`"
-syn match helpIgnore		"{DEPRECATE(.*)DEPRECATE}"
+syn match helpIgnore		"DEPRECATE(.*)DEPRECATE"
 syn match helpConditional	"\t[* ]Conditional\t\+[a-z].*"
 syn match helpRepeat		"\t[* ]Repeat\t\+[a-z].*"
 syn match helpLabel		"\t[* ]Label\t\+[a-z].*"
@@ -304,7 +304,7 @@ syn keyword javaLabel		default
 if !exists("java_allow_cpp_keywords")
   syn keyword javaError auto extern friend inline redeclared
   syn keyword javaError register signed sizeof struct template typedef 
-  syn keyword javaError unsigned operator
+  syn keyword javaError unsigned
 endif
 
 " The following cluster contains all java groups except the contained ones
