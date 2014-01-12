@@ -84,16 +84,19 @@ nnoremap <C-\>] <ESC>:set filetype=help<CR>
 nnoremap <C-h> <ESC>:vimgrep // *<left><left><left>
 
 "" tabs
-noremap fl gt
-noremap fh gT
-noremap th  :tabfirst<CR>
-noremap tk  :tabnext<CR>
-noremap tj  :tabprev<CR>
-noremap tl  :tablast<CR>
-noremap tt  :tabedit<Space>
-noremap tn  :tabnew<Space>
-noremap tm  :tabm<Space>
-noremap td  :tabclose<CR>
+noremap fH  :tabfirst<CR>
+noremap fl  :tabnext<CR>
+noremap fh  :tabprev<CR>
+noremap fL  :tablast<CR>
+noremap fe  :tabedit<Space>
+noremap fn  :tabnew<Space>
+noremap fm  :tabm<Space>
+noremap fd  :tabclose<CR>
+
+"" buffers
+noremap gl  :bn<CR>
+noremap gh  :bp<CR>
+noremap gd  :bd<CR>
 
 "" misc 
 noremap z <C-w>
@@ -153,3 +156,8 @@ let g:airline_readonly_symbol   = '⭤'
 let g:airline_linecolumn_prefix = '⭡'
 let g:airline#extensions#tabline#enabled = 1
 " for different special symbol settings using patched/unpatched font, please use :help airline
+
+" vim-taskwarrior
+Bundle 'farseer90718/vim-taskwarrior'
+let g:task_report_name  = 'long'
+"let g:task_rc_override = 'defaultwidth=999'
