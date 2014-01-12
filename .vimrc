@@ -137,7 +137,8 @@ call vundle#rc()
 
 " let Vundle manage Vundle
 " required! 
-Bundle 'gmarik/vundle'
+" Please first run git clone https://github.com/gmarik/vundle.git ~/.vim/bundle/vundle
+Bundle 'gmarik/vundle'  
 
 filetype plugin indent on     " required!
 
