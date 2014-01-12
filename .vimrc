@@ -126,4 +126,29 @@ endfunction
 
 " Format the statusline
 set laststatus=2
-set statusline=\ %f\ %=%P\ %{fugitive#statusline()}
+"set statusline=\ %f\ %=%P\ %{fugitive#statusline()}
+
+" For Vundle
+set nocompatible              " be iMproved
+filetype off                  " required!
+
+set rtp+=~/.vim/bundle/vundle/
+call vundle#rc()
+
+" let Vundle manage Vundle
+" required! 
+Bundle 'gmarik/vundle'
+
+filetype plugin indent on     " required!
+
+" vim-airline
+Bundle 'vim-airline'
+let g:airline_left_sep          = '⮀'
+let g:airline_left_alt_sep      = '⮁'
+let g:airline_right_sep         = '⮂'
+let g:airline_right_alt_sep     = '⮃'
+let g:airline_branch_prefix     = '⭠'
+let g:airline_readonly_symbol   = '⭤'
+let g:airline_linecolumn_prefix = '⭡'
+let g:airline#extensions#tabline#enabled = 1
+" for different special symbol settings using patched/unpatched font, please use :help airline
