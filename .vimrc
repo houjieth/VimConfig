@@ -156,8 +156,3 @@ let g:airline_readonly_symbol   = '⭤'
 let g:airline_linecolumn_prefix = '⭡'
 let g:airline#extensions#tabline#enabled = 1
 " for different special symbol settings using patched/unpatched font, please use :help airline
-
-" vim-taskwarrior
-Bundle 'farseer90718/vim-taskwarrior'
-let g:task_report_name  = 'long'
-"let g:task_rc_override = 'defaultwidth=999'
