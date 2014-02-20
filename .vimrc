@@ -107,6 +107,10 @@ nnoremap qq :q!<CR>
 nnoremap wq :wq<CR>
 nnoremap we :w<CR>
 
+" style
+set cursorline
+hi CursorLine cterm=NONE ctermbg=235
+
 "Git branch
 function! GitBranch()
     let branch = system("git branch 2> /dev/null | sed -e '/^[^*]/d' -e 's/* //'")
