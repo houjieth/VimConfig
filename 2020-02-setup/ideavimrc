@@ -28,3 +28,6 @@ map <S-right> w
 
 nnoremap , <C-d>
 nnoremap . <C-u>
+
+set clipboard+=unnamed
+set ideajoin
