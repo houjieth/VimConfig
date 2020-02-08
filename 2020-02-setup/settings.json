@@ -1,0 +1,49 @@
+// VSCode vim plugin customizations
+// Put as ~/.config/Code/User/settings.json
+{
+    "window.zoomLevel": 1,
+    "vim.hlsearch": true,
+    "vim.useSystemClipboard": true,
+    "vim.useCtrlKeys": false,
+    "vim.handleKeys": {
+        "<C-r>": true,
+    },
+    "vim.normalModeKeyBindings": [
+        {
+            "before": [","],
+            "commands": [
+                {
+                    "command": "editorScroll",
+                    "args": {
+                        "to": "down",
+                        "by": "line",
+                        "value": 20,
+                        "revealCursor": true,
+                    }
+                }
+            ]
+        },
+        {
+            "before": ["."],
+            "commands": [
+                {
+                    "command": "editorScroll",
+                    "args": {
+                        "to": "up",
+                        "by": "line",
+                        "value": 20,
+                        "revealCursor": true,
+                    }
+                }
+            ]
+        },
+        {
+            "before": ["H"],
+            "after": ["0"],
+        },
+        {
+            "before": ["L"],
+            "after": ["$"],
+        },
+    ]
+}
